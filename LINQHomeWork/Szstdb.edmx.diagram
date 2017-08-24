@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7d3f50c29e0b466984912b3dd9097b94" Name="Diagram1">
+        <EntityTypeShape EntityType="SzstApplicationModel.C__MigrationHistory" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SzstApplicationModel.Answer" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SzstApplicationModel.Application" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="SzstApplicationModel.Grade" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SzstApplicationModel.Remark" Width="1.5" PointX="10.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SzstApplicationModel.User" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <AssociationConnector Association="SzstApplicationModel.FK_dbo_Answers_dbo_Applications_ApplicationId" ManuallyRouted="false" />
+        <AssociationConnector Association="SzstApplicationModel.FK_dbo_Applications_dbo_Users_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SzstApplicationModel.FK_dbo_Grades_dbo_Applications_ApplicationId" ManuallyRouted="false" />
+        <AssociationConnector Association="SzstApplicationModel.FK_dbo_Grades_dbo_Users_AdminId" ManuallyRouted="false" />
+        <AssociationConnector Association="SzstApplicationModel.FK_dbo_Remarks_dbo_Grades_GradeId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
