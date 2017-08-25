@@ -14,6 +14,10 @@ namespace LINQHomeWork
 
             //Console.WriteLine("Unesite neki broj:");
             //var n = int.Parse(Console.ReadLine());
+            //var numbers = Enumerable.Range(2, n)
+            //            .Where(number =>
+            //            Enumerable.Range(2, number - 2)
+            //            .All(divisor => number % divisor != 0));
             //var numbers = Enumerable.Range(1, n)
             //    .Where(number =>
             //    {
@@ -27,8 +31,8 @@ namespace LINQHomeWork
             //    })
             //    .ToList();
             //Console.WriteLine("Prosti brojevi su:");
-            //foreach(var number in numbers)
-            //    Console.Write("{0} ",number);
+            //foreach (var number in numbers)
+            //    Console.Write("{0} ", number);
 
             //2.) Napraviti metodu koja prima n te racuna broj djelitelja svakog broja
             // od 1 do n. Na temelju toga racuna "slabost" broja gledajuci koliko brojeva
@@ -103,7 +107,7 @@ namespace LINQHomeWork
                 {
                     if (answer.Value == null)
                         return amount;
-                    string value=StringConverter(answer.Value);
+                    var value=StringConverter(answer.Value);
                     return amount + double.Parse(value);
                 });
 
@@ -113,7 +117,7 @@ namespace LINQHomeWork
                 {
                     if (answer.Value == null)
                         return amount;
-                    string value=StringConverter(answer.Value);
+                    var value=StringConverter(answer.Value);
                     return amount + double.Parse(value);
                 });
            
